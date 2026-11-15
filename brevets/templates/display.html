@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Display - ACP Controle Times</title>
+	</head>
+<body>
+	<table>
+	<tr>
+	<th> Miles </th>
+	<th> Km </th>
+	<th>Location</th>
+	<th>Open</th>
+	<th>Close</th>
+     	 </tr>
+
+		{% for rows in table_body %}
+			<tr>
+				{% for el in rows %}
+					<td>{{ el }}</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
